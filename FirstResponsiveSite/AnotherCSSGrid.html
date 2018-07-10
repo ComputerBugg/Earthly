@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Chonburi" rel="stylesheet">
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #E1E1E1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+	.item1 {
+		grid-column: 1/-1;
+		background-color: #e4e4e4;
+	}
+	.item2 {
+		position: relative;
+		grid-column: 1/-1;
+		overflow: hidden;
+		background-color: #023536;
+		line-height: 50px;
+		user-select: none;
+	}
+	.item3 {
+		grid-column: 1/-1;padding: 8px;
+		background-color: white;
+		display: grid;
+		grid-template-columns: 15.8% 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	.content1 {
+		grid-row-end: span 2;
+		background-image: url(ProfilePic2.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		bottom: 0;
+	}
+	.content2 {
+		grid-row-end: span 2;
+		overflow: auto;
+		padding: 5px;
+		text-align: left;
+		font-size: 2.5vh;
+		padding: 10px;
+	}
+	body {
+  		display: grid;
+		background-color: aquamarine;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 10vh 46vh 44vh;
+}
+	body > div {
+	 	background-color: rgba(255, 255, 255, 0.8);
+		text-align: center;
+		font-size: 30px;
+}
+	img {
+		min-width: 100%;
+	}
+	h1 {
+		color: #024142;
+	}
+	.content {
+		color: white;
+		font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -47.9%);
+		font-family: 'Chonburi', cursive;
+	}
+	#more-content {
+		font-size: 30px;
+	}
+	#sub {
+		font-size: 30px;
+		line-height: 10px;
+	}
+	#sub:after {
+			content: " of bug eyed animals and endangered plants";
+		}
+	#header {
+		font-size: 85px;
+	}
+	@media only screen and (max-width:1300px) {
+		#sub {
+			font-size: 25px;
+		}
+	}
+	@media only screen and (max-width:900px) {
+		#sub:after {
+			content: none;
+		}
+		#header {
+			font-size: 80px;
+		}
+		.content1 {
+			display: none;
+		}
+		.content2 {
+			grid-column: 1/-1;
+			margin: 10px;
+		}
+	}
+	@media only screen and (max-width:500px) {
+		#header {
+			font-size: 60px;
+		}
+		#sub {
+			font-size: 22px;
+		}
+		.item2 {
+			line-height: 38px;
+		}
+	}
+</style>
+</head>
+<body>
+  <div class="item1">
+  	
+  </div>
+  <div class="item2"><div class="grad"><div class="content"><p><span id="header">Wildlife Preserve</span><br><span id="sub">Donate a dollar and help save millions</span></p></div><img src="BlueBanner.jpg" alt="Sorry, The dog ate the .png file again."></div></div>
+  <div class="item3">
+  	<div class="content1"></div>
+	  <div class="content2"><span id="more-content"><b>Fei Gao</b> (CEO)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nemo tempore. Dolores quis tempore numquam minima, reiciendis, vitae tempora amet, labore ex eos optio, aliquid sint reprehenderit est tenetur. Explicabo voluptatibus debitis veniam quasi sit veritatis ipsam earum, reiciendis aut, dolor dolorem repellat eum, aperiam animi excepturi quam. Quidem, architecto commodi inventore magnam nisi delectus? Repellendus, accusantium pariatur a possimus dolore laboriosam quis, maiores consequatur odit! Molestias, provident. Sit minima nobis placeat doloremque quidem, at incidunt cupiditate ex labore dolore totam aperiam voluptatum, excepturi sapiente vitae optio provident corporis eligendi esse rem illum quo alias quas. Ratione expedita consequuntur quis omnis aliquam cupiditate similique, tempore ut recusandae animi! Corporis officiis, hic modi soluta alias est qui nobis quia illo, velit, non a excepturi maxime at dolor consectetur reiciendis magnam cumque."</div>
+  </div>  
+</body>
+</html>
